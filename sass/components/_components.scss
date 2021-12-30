@@ -116,3 +116,30 @@
   &__user-name {
   }
 }
+
+///////////////////////////////////////////////////
+// User Navigator
+
+.side-nav {
+  &__item {
+
+  }
+
+  &__link {
+  }
+
+  &__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}
+
+///////////////////////////////////////////////////
+// Legal Text
+
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--color-grey-light-4);
+}
