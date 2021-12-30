@@ -209,11 +209,18 @@
 .overview {
   display: flex;
   align-items: center;
+  border-bottom: 0.1rem solid var(--color-grey-light-2);
 
   &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 1.5rem 3rem;
   }
 
   &__stars {
+    display: flex;
     margin-right: auto;
   }
 
@@ -225,14 +232,76 @@
   }
 
   &__location {
+    font-size: 1.2rem;
+    display: flex;
+    vertical-align: center;
+  }
+
+  &__icon-location {
+    margin-right: 0.5rem;
   }
 
   &__rating {
+    align-self: stretch;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    margin-left: 3rem;
+    padding: 0 2.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   &__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -0.3rem;
   }
 
   &__rating-count {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+}
+
+///////////////////////////////////////////////////
+// Button Inline
+
+.btn-inline {
+  border: none;
+  cursor: pointer;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 0.1rem solid currentColor;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+  background-color: transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--color-grey-dark-1);
+  }
+
+  &:focus {
+    animation: pulse infinite 1s;
+    outline: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
