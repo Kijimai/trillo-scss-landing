@@ -9,6 +9,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //10px
+
+  @media only screen and (max-width: $breakpoint-large) {
+    font-size: 50%; //8px
+  }
 }
 
 body {
@@ -25,5 +29,3 @@ body {
   background-size: cover;
   color: var(--color-grey-dark-2);
 }
-
-
